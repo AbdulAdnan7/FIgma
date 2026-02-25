@@ -1,0 +1,14 @@
+body {
+   font-family: "Space Grotesk", sans-serif;
+  
+}
+
+
+.logo {
+  display: flex;
+  width: 219.537px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 12.92px;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import LogoSlider from './LogoSlider'
 
 const Home = () => {
   return (
@@ -15,6 +16,8 @@ const Home = () => {
         </div>
         </div>
 
+
+      
         </section>
   )
 }

@@ -78,7 +78,7 @@ const Services = () => {
              <div key={service.id} className="
       w-92
       mt-6
-      md:w-95
+      md:w-92
       lg:w-150
       rounded-[45px] 
       border-2

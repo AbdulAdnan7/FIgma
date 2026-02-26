@@ -5,51 +5,62 @@ const Services = () => {
     const serviceVariants = [
         {
             id: 1,
-            title: 'Search engine optimization',
+            title: 'Search engine',
+            para: 'optimization',
             cardBg: '#F3F3F3',
             tagBg: '#B9FF66',
             textColor: '#000',
-            circleBg: '',
+            circleBg: '/Arrow.svg',
             imageSrc: '/Maginifier.png'
         },
         {
             id: 2,
-            title: 'Pay-per-click advertising',
+            title: 'Pay-per-click ',
+            para: 'advertising',
             cardBg: '#B9FF66',
             tagBg: "#F3F3F3",
             textColor: '#000',
+            circleBg: '/Arrow.svg',
             imageSrc: '/click.png'
         },
         {
             id: 3,
-            title: 'Social Media Marketing',
+            title: 'Social Media',
+            para: 'Marketing',
             cardBg: '#191A23',
             tagBg: "#F3F3F3",
             textColor: '#F3F3F3',
+            circleBg: '/IconALT.svg',
             imageSrc: '/navs.png'
         },
         {
             id: 4,
-            title: 'Email Marketing',
+            title: 'Email',
+            para: 'Marketing',
             cardBg: '#F3F3F3',
             tagBg: '#B9FF66',
             textColor: '#000',
+            circleBg: '/Arrow.svg',
             imageSrc: '/emailsill.png'
         },
         {
             id: 5,
-            title: 'Content Creation',
+            title: 'Content',
+            para: 'Creation',
             cardBg: '#B9FF66',
             tagBg: '#F3F3F3',
             textColor: '#000',
+            circleBg: '/Arrow.svg',
             imageSrc: '/tab.png'
         },
         {
             id: 6,
-            title: 'Analytics and Tracking',
+            title: 'Analytics and',
+            para: 'Tracking',
             cardBg: '#191A23',
             tagBg: '#F3F3F3',
             textColor: '#F3F3F3',
+            circleBg: '/IconALT.svg',
             imageSrc: '/charts.png'
         }
     ]
@@ -65,7 +76,7 @@ const Services = () => {
        {
         serviceVariants.map((service) => (
              <div key={service.id} className="
-      w-96
+      w-92
       mt-6
       md:w-95
       lg:w-150
@@ -96,21 +107,21 @@ const Services = () => {
           items-start
           gap-23.25
         ">
-          <h3 className="
-            text-[#191A23]
-            text-2xl
-            md:text-3xl
-            font-semibold
-            m-0
-            px-4
-            py-2
-            rounded-lg 
-            inline-block
-            w-auto
-            max-w-62.5
-          " style={{ backgroundColor: service.tagBg }}>
-            {service.title}
-          </h3>
+        <h3 className="text-2xl md:text-3xl font-medium leading-tight">
+  <span
+    className="inline-block px-3 py-1 rounded-xl"
+    style={{ backgroundColor: service.tagBg }}
+  >
+    {service.title}
+  </span>
+  <br />
+  <span
+    className="inline-block px-3 py-1 rounded-xl"
+    style={{ backgroundColor: service.tagBg }}
+  >
+    {service.para}
+  </span>
+</h3>
           
           <a
             href="#"
@@ -141,7 +152,7 @@ const Services = () => {
               transition-transform
               group-hover:translate-x-1
             ">
-              <img src='/Arrow.svg' />
+              <img src={service.circleBg} />
             </span>
             <span style={{ color: service.textColor}}>
             Learn More

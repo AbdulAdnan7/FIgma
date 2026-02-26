@@ -167,6 +167,8 @@ const Services = () => {
             flex
             h-30
             w-30
+            lg:w-52.5
+            lg:h-[195.915px]
             items-center
             justify-center
             rounded-[30px]

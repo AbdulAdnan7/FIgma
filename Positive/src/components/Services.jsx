@@ -77,7 +77,8 @@ const Services = () => {
         serviceVariants.map((service) => (
              <div key={service.id} className="
       w-92
-      mt-6
+      mt-4
+      lg:mt-6
       md:w-92
       lg:w-150
       rounded-[45px] 
